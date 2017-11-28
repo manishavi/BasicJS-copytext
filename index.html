@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Discoveryvip JS Code Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, mentitum appareat probatus eu his, sea an docendi dissentiet, minimum percipit id has.
+            Quem consectetuer nec ut, pro id minimum vituperata. Ad illum scripta repudiare his. Ei eam adipiscing dissentiunt,
+            cu duo singulis interpretaris.
+        </p>
+        <p>Meis illud scripserit ut qui, pri ei dolor tempor platonem, per cu minim inermis albucius. Ei regione phaedrum nec.
+            Inermis elaboraret vim in. Scripserit accommodare vituperatoribus at vix, eu etiam congue his.
+        </p>
+        <p> Ea case harum movet eos. Mentitum constituam cu nec, vis oblique incorrupte dissentiunt id. Delectus voluptaria ei
+            pri, essent epicuri at eum. Ea verear sanctus pertinax usu. Vix ad tale audiam timeam, quo ei regione constituto
+            mnesarchum. Natum omittam cum et, an amet graece vix. Possit impedit sadipscing ius eu. </p>
+        <p>Duis definiebas scriptorem quo et, cum possim impetus ei, cum te homero delicatissimi. Usu ei fabulas copiosae, docendi
+            scriptorem at eam. Sea ex admodum sadipscing. Habeo fastidii no mei. Ne sea dolore tempor rationibus. Facete
+            discere splendide no vis, an sit choro omittantur, everti mollis et sit.</p>
+        <p> Case copiosae indoctum pri ut. No elitr laoreet dolores mel, in duo tation legere cotidieque. Pro in stet libris
+            graeco. Nam cibo adolescens ne, et his labore posidonium.</p>
+        <button id="myButton" class="btn btn-primary">Copy Text</button>
+        <textarea name="coptext" id="coptext" row="10" cols="50">Placeholder</textarea>
+        <div id="myDiv"></div>
+    </div>
+    <script>
+        const myBtn = document.getElementById('myButton');
+        const mytext = document.getElementById('coptext');
+        const myDiv = document.getElementById('myDiv');
+        const myFunction = () => {
+            // console.log(window);
+            // console.log(window.getSelection().toString());
+            const selText = window.getSelection().toString();
+            // myDiv.innerHTML = selText;//innerHTML copies without any styles but innerText copy as it is in the selection
+            myDiv.innerText = selText;
+            // coptext.innerHTML = selText;
+            coptext.innerText = selText;
+            console.log(selText);
+            console.log('Clicked');
+        };
+        myBtn.addEventListener('click', myFunction);
+    </script>
+</body>
+
+</html>
